@@ -32,7 +32,7 @@ public class EmpController {
      * @param gender 性别
      * @param begin 开始的索引
      * @param end 结束的索引
-     * @return
+     * @return success(pageBean)
      */
     @GetMapping
     public Result getEmpList(@RequestParam(defaultValue = "1") Integer page,
