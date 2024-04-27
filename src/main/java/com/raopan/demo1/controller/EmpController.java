@@ -26,12 +26,12 @@ public class EmpController {
     /**
      * 查询员工信息
      *
-     * @param page
-     * @param pageSize
-     * @param name
-     * @param gender
-     * @param begin
-     * @param end
+     * @param page 页码
+     * @param pageSize 每页数量
+     * @param name 姓名
+     * @param gender 性别
+     * @param begin 开始的索引
+     * @param end 结束的索引
      * @return
      */
     @GetMapping
@@ -49,8 +49,8 @@ public class EmpController {
     /**
      * 批量删除员工
      *
-     * @param ids
-     * @return
+     * @param ids 员工list
+     * @return null
      */
     @DeleteMapping("/ids")
     public Result deleteUserByIds(List<Integer> ids) {

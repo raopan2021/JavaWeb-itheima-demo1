@@ -22,7 +22,7 @@ public interface EmpMapper {
 
     /**
      * 批量删除员工
-     * @param ids
+     * @param ids 员工list
      */
     void deleteUserByIds(List<Integer> ids);
 }
